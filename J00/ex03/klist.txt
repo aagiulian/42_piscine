@@ -1,0 +1,6 @@
+Credentials cache: API:18251
+        Principal: agiulian@42.FR
+
+  Issued                Expires               Principal
+Jul  4 13:06:05 2016  Jul  4 23:06:05 2016  krbtgt/42.FR@42.FR
+Jul  4 13:36:47 2016  Jul  4 23:06:05 2016  host/vgs-fn1.42.fr@42.FR
