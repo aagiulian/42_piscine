@@ -1,27 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   rostring.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: agiulian <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/07/17 16:04:26 by agiulian          #+#    #+#             */
-/*   Updated: 2016/07/17 21:05:19 by agiulian         ###   ########.fr       */
+/*   Created: 2016/07/17 21:24:59 by agiulian          #+#    #+#             */
+/*   Updated: 2016/07/17 21:35:35 by agiulian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <unistd.h>
 
-int		ft_is_prime(int nb);
-
-int		main(void)
+void	ft_putchar(char c)
 {
-	int nb;
+	write(1, &c, 1);
+}
 
-	nb = 1;
-	if (ft_is_prime(nb) == 1)
-		printf("%i est un nombre premier.\n", nb);
-	if (ft_is_prime(nb) == 0)
-		printf("%i n'est pas un nombre premier.\n", nb);
+void	ft_putstr(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i])
+	{
+		write(1, &str[i], 1);
+		i++;
+	}
+}
+
+int		main(int argc, char **argv)
+{
+	ft_putstr(argv[1]);
 	return (0);
 }
