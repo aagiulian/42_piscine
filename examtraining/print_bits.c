@@ -6,7 +6,7 @@
 /*   By: agiulian <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/22 14:29:49 by agiulian          #+#    #+#             */
-/*   Updated: 2016/07/22 15:58:43 by agiulian         ###   ########.fr       */
+/*   Updated: 2016/07/22 16:34:40 by agiulian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,6 @@ void	print_bits(unsigned char c)
 
 int		main(void)
 {
-	print_bits(10);
+	print_bits(52);
 	return (0);
 }
