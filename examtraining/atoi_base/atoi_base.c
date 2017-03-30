@@ -6,7 +6,7 @@
 /*   By: agiulian <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/28 18:02:16 by agiulian          #+#    #+#             */
-/*   Updated: 2016/07/28 18:59:23 by agiulian         ###   ########.fr       */
+/*   Updated: 2017/03/30 13:46:22 by agiulian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ int 	check_carac(int base, char *ctab,  char c)
 	i = 0;
 	while (i < base && ctab[i])
 	{
-		if (ctab[i] <= 'z' && ctab[i] >= 'a')
-			ctab[i] -= 32;
+		if (c <= 'z' && c >= 'a')
+			c -= 32;
 		if (c == ctab[i])
 			return (i);
 		i++;
@@ -64,6 +64,6 @@ int		ft_atoi_base(char *str, int base)
 
 int		main(void)
 {
-	printf("%i", ft_atoi_base("0", 10));
+	printf("%i", ft_atoi_base("FFFFFF", 16));
 	return (0);
 }
